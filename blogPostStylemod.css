@@ -21,7 +21,9 @@ a:visited {
 	text-decoration: none;
 }
 
-
+b {
+color: #013440;
+}
 
 #mainwrapper header {
 	/*Header */
