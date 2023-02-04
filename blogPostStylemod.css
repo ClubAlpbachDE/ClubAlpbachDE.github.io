@@ -33,7 +33,7 @@ height: auto;
 }
 
 .video iframe {
-position: relative; 
+position: absolute; 
 top: 0; 
 left: 0; 
 }
