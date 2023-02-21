@@ -76,7 +76,8 @@ header nav a {
 }
 #content #mainContent #authorInfo {
 	/* Author info section */
-	background-color: #F2C46D;
+	background-color: #011C26;
+	color: #F2F2F2;
 }
 #content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
 	padding-left: 2%;
