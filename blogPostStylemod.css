@@ -31,7 +31,7 @@ color: #013440;
 	color: #F2F2F2;
 	overflow: auto;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 500;
 }
 #mainwrapper header #logo {
 	/* Company Logo text */
@@ -262,7 +262,7 @@ footer {
 #mainwrapper header nav {
 	/*navigation links in header */
 	text-align: center;
-	background-color: #F2C46D;
+	background-color: #013440;;
 	width: 98%;
 }
 #content #sidebar #adimage {
