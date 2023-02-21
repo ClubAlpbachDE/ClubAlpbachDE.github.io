@@ -27,7 +27,7 @@ color: #013440;
 
 #mainwrapper header {
 	/*Header */
-	background-color: #011C26;
+	background-color: #013440;
 	color: #F2F2F2;
 	overflow: auto;
 	font-style: normal;
@@ -77,7 +77,7 @@ header nav a {
 }
 #content #mainContent #authorInfo {
 	/* Author info section */
-	background-color: #011C26;
+	background-color: #013440;
 	color: #F2F2F2;
 }
 #content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
@@ -159,7 +159,8 @@ nav ul li a {
 	/* Footer bar at the bottom of the page */
 	height: 18px;
 	clear: both;
-	background-color: #F2C46D;
+	background-color: #011C26;
+	color: #F2F2F2;
 	width: 100%;
 }
 footer {
@@ -237,8 +238,6 @@ footer {
 }
 footer {
 	/* Footer region */
-	background-color: #011C26;
-	color: #F2F2F2;
 	width: 96%;
 	padding-left: 2%;
 	padding-right: 2%;
