@@ -62,7 +62,7 @@ header nav a {
 #content #mainContent h3 {
 	/*Captions ot Taglines */
 	font-style: normal;
-	font-weight: 200;
+	font-weight: 300;
 }
 #content #mainContent #bannerImage {
 	/*Container for main banner image */
@@ -296,6 +296,7 @@ footer {
 #content #mainContent h3 {
 	/* Title under maincontent, if any */
 	font-size: 14px;
+	font-weight: 300;
 }
 #content footer article {
 	/* Each foter article */
