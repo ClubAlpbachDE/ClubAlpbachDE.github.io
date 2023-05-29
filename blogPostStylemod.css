@@ -464,7 +464,7 @@ margin-bottom: 21px;
 /* Next & previous buttons */
 .prev,
 .next {
-  color: rgba(0, 0, 0, 0);
+  color: #F2F2F2;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -526,7 +526,6 @@ opacity: 1;
 
 .blogimg {
   width: 100%;
-  max-width: 700px;
-	max-height: 700%;
+  max-height: 700%;
   height: auto;
 }
