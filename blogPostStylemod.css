@@ -527,5 +527,6 @@ opacity: 1;
 .blogimg {
   width: 100%;
   max-width: 700px;
+	max-height: 700%;
   height: auto;
 }
