@@ -60,7 +60,7 @@ color: #013440;
 	font-style: normal;
 	font-weight: 500;
 	 position: fixed;
-    width: 78%;
+    width: 100%;
 	float: left;
 	z-index: 2;
 }
@@ -212,7 +212,7 @@ nav ul li a {
 	text-decoration: none;
 }
 
-.blog {
+.block {
     display: none;
 }
 
@@ -464,7 +464,7 @@ margin-bottom: 21px;
 /* Next & previous buttons */
 .prev,
 .next {
-  color: #013440;
+  color: rgba(1, 196, 196, 0.1);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -477,6 +477,7 @@ margin-bottom: 21px;
   border-radius: 0;
   user-select: none;
   opacity: 1;
+	background-color: rgba(1, 196, 196, 0.3);
 }
 
 /* Position the "next button" to the right */
