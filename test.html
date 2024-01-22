@@ -27,39 +27,6 @@
 </script>
 
 <!-- Bilderkarussell -->
-    <script>
-let slideIndex = [1, 1, 1, 1, 1];
-let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
-showSlides(slideIndex[0], 0);
-showSlides(slideIndex[1], 1);
-showSlides(slideIndex[2], 2);
-showSlides(slideIndex[3], 3);
-showSlides(slideIndex[4], 4);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function currentSlide(n, no) {
-  showSlides(slideIndex[no] = n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex[no]-1].style.display = "block";
-}
-
-let x = document.getElementsByClassName(slideId[0]);
-x[0].style.display = "block";
-
-</script>
-
 
 
 </head>
@@ -281,7 +248,7 @@ Weder die Staatsbürgerschaft, noch der Wohnort in Deutschland ist Voraussetzung
 			<p> Mehr Informationen auf der offiziellen Website <a href="https://www.alpbach.org/" target="_blank">alpbach.org</a>.</p>
 
 		<div class="bannerImage" style="text-align: center; background-color:#013440;">
-            <a href="https://youtu.be/Nzy7ZRNW9lg" target="_blank"><img src="https://github.com/ClubAlpbachDE/ClubAlpbachDE.github.io/blob/main/EFA22%20YouTube%20Standbild.png?raw=true" alt="EFA22 YouTube"></a>
+            <a href="https://youtu.be/hag_bXVpzHI?feature=shared" target="_blank"><img src="https://raw.githubusercontent.com/ClubAlpbachDE/ClubAlpbachDE.github.io/main/EFA23%20Standbild.webp" alt="EFA23 YouTube"></a>
         </div>
 		        <h1 id="CAD">Club Alpbach Deutschland e. V.</h1>
      
@@ -651,5 +618,39 @@ Central European University und Bruno Stagno, Chief Advocacy Officer bei Human R
 	</div> 
 </div>
 </div>
+
+<script>
+// Initialize slide index for each slideshow. Initially set to show the first slide (index 1).
+let slideIndex = [1, 1, 1, 1, 1]; // Extend this array if you have more than 5 slideshows.
+
+// Corresponding slide class names. Add more if you have more than 5 slideshows.
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"];
+
+// Initialize slides: this loop will go through each slideshow and display the first slide.
+for (let i = 0; i < slideId.length; i++) {
+    showSlides(slideIndex[i], i);
+}
+
+// Call this function when you want to navigate slides (next/prev).
+function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+}
+
+// Main function to display slides.
+function showSlides(n, no) {
+    let i;
+    let slides = document.getElementsByClassName(slideId[no]);
+    if (n > slides.length) { slideIndex[no] = 1; }
+    if (n < 1) { slideIndex[no] = slides.length; }
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Show the active slide
+    slides[slideIndex[no] - 1].style.display = "block";
+}
+</script>
 </body>
 </html>
