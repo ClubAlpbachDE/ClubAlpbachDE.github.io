@@ -49,12 +49,12 @@ a:visited {
 }
 
 strong {
-color: #013440;
+color: #214F6E;
 }
 
 #mainwrapper header {
 	/*Header */
-	background-color: #013440;
+	background-color: #214F6E;
 	color: #F2F2F2;
     overflow: auto;
 	font-style: normal;
@@ -78,7 +78,7 @@ color: #013440;
 #mainwrapper header nav {
 	/*Nav bar containing links in header */
 	text-align: right;
-	 background-color: #013440;
+	 background-color: #214F6E;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-right: 2%;
@@ -93,7 +93,7 @@ header nav a {
 
 }
 #content .mainContent h1, #content .mainContent h2 {
-		color: #013440;
+		color: #214F6E;
 	/* Styling for main headings */
 }
 #content .mainContent h3 {
@@ -104,7 +104,7 @@ header nav a {
 #content .mainContent .bannerImage {
 	/*Container for main banner image */
 	width: 100%;
-	background-color: #F2C46D;
+	background-color:#E28F75;
 }
 
 #content .mainContent p {
@@ -195,7 +195,7 @@ footer article h3 {
 #content #sidebar #adimage {
 	/* Container for Image in sidebar */
 	width: 100%;
-	background-color: #F2C46D;
+	background-color:#E28F75;
 	margin-top: 46px;
 	float: none;
 	overflow: auto;
@@ -220,7 +220,7 @@ nav ul li a {
 	/* Footer bar at the bottom of the page */
 	height: 18px;
 	clear: both;
-	background-color: #013440;
+	background-color: #214F6E;
 	color: #F2F2F2;
 	width: 100%;
 }
@@ -347,7 +347,7 @@ footer {
     border-radius: 4px;
     postion: right;
     background-color: #F2F2F2;
-	color: #013440;
+	color: #214F6E;
 }
 .mobilemenu {
     text-align: right;
@@ -386,7 +386,7 @@ footer {
 #content .mainContent h3 {
 	/* Title under maincontent, if any */
 	font-weight: bold;
-	color: #013440;
+	color: #214F6E;
 
 }
 #content footer article {
