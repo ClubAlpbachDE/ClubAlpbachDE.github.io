@@ -104,7 +104,7 @@ header nav a {
 #content .mainContent .bannerImage {
 	/*Container for main banner image */
 	width: 100%;
-	background-color:#E28F75;
+	background-color:#732C46;
 }
 
 #content .mainContent p {
@@ -195,7 +195,7 @@ footer article h3 {
 #content #sidebar #adimage {
 	/* Container for Image in sidebar */
 	width: 100%;
-	background-color:#E28F75;
+	background-color:#732C46;
 	margin-top: 46px;
 	float: none;
 	overflow: auto;
