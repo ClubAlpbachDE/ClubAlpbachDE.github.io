@@ -115,7 +115,7 @@ header nav a {
 }
 #content .mainContent #authorInfo {
 	/* Author info section */
-	background-color: rgba(1, 52, 64, 0.80);
+	background-color: #214F6E;
 	color: #F2F2F2;
 }
 #content .mainContent #authorInfo h2, #content .mainContent #authorInfo p {
@@ -477,7 +477,7 @@ margin-bottom: 21px;
   border-radius: 0;
   user-select: none;
   opacity: 1;
-	background-color: rgba(1, 52, 64, 0.55);
+	background-color: #36899F;
 }
 
 /* Position the "next button" to the right */
@@ -494,13 +494,15 @@ margin-bottom: 21px;
 .prev:hover,
 .next:hover,
  .text:hover {
- background-color: rgba(1, 52, 64, 0.55);
+ background-color: #36899F;
 }
 
 /* Slide images */
 .mySlides1 img,
 .mySlides2 img,
- .mySlides3 img{
+ .mySlides3 img,
+.mySlides4 img, 
+.mySlides5 img {
   max-width: 100%;
   height: auto;
   margin: auto;
