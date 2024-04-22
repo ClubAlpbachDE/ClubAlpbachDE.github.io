@@ -4,7 +4,7 @@
 body {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-style: "normal";
-	font-color: #011C26;
+	font-color: #0D0D0D;
 	font-weight: 200;
 	background-color: #F2F2F2;
 	list-style-type: none;
@@ -49,12 +49,12 @@ a:visited {
 }
 
 strong {
-color: #214F6E;
+color: #035473;
 }
 
 #mainwrapper header {
 	/*Header */
-	background-color: #214F6E;
+	background-color: #035473;
 	color: #F2F2F2;
     overflow: auto;
 	font-style: normal;
@@ -78,7 +78,7 @@ color: #214F6E;
 #mainwrapper header nav {
 	/*Nav bar containing links in header */
 	text-align: right;
-	 background-color: #214F6E;
+	 background-color: #035473;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-right: 2%;
@@ -93,7 +93,7 @@ header nav a {
 
 }
 #content .mainContent h1, #content .mainContent h2 {
-		color: #214F6E;
+		color: #035473;
 	/* Styling for main headings */
 }
 #content .mainContent h3 {
@@ -115,7 +115,7 @@ header nav a {
 }
 #content .mainContent #authorInfo {
 	/* Author info section */
-	background-color: #214F6E;
+	background-color: #035473;
 	color: #F2F2F2;
 }
 #content .mainContent #authorInfo h2, #content .mainContent #authorInfo p {
@@ -220,7 +220,7 @@ nav ul li a {
 	/* Footer bar at the bottom of the page */
 	height: 18px;
 	clear: both;
-	background-color: #214F6E;
+	background-color: #035473;
 	color: #F2F2F2;
 	width: 100%;
 }
@@ -347,7 +347,7 @@ footer {
     border-radius: 4px;
     postion: right;
     background-color: #F2F2F2;
-	color: #214F6E;
+	color: #035473;
 }
 .mobilemenu {
     text-align: right;
@@ -386,7 +386,7 @@ footer {
 #content .mainContent h3 {
 	/* Title under maincontent, if any */
 	font-weight: bold;
-	color: #214F6E;
+	color: #035473;
 
 }
 #content footer article {
