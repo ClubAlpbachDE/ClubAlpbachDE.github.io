@@ -49,7 +49,7 @@ a:visited {
 }
 
 strong {
-color: #035473;
+color: #04748C;
 }
 
 #mainwrapper header {
@@ -93,7 +93,7 @@ header nav a {
 
 }
 #content .mainContent h1, #content .mainContent h2 {
-		color: #035473;
+		color: #04748C;
 	/* Styling for main headings */
 }
 #content .mainContent h3 {
@@ -386,7 +386,7 @@ footer {
 #content .mainContent h3 {
 	/* Title under maincontent, if any */
 	font-weight: bold;
-	color: #035473;
+	color: #04748C;
 
 }
 #content footer article {
@@ -477,7 +477,7 @@ margin-bottom: 21px;
   border-radius: 0;
   user-select: none;
   opacity: 1;
-	background-color: #36899F;
+	background-color: #8C2A4E;
 }
 
 /* Position the "next button" to the right */
@@ -494,7 +494,7 @@ margin-bottom: 21px;
 .prev:hover,
 .next:hover,
  .text:hover {
- background-color: #36899F;
+ background-color: #8C2A4E;
 }
 
 /* Slide images */
