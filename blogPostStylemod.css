@@ -384,11 +384,7 @@ footer {
 	width: 80%;
 	text-align: center;
 }
-#content .mainContent h3 {
-	/* Title under maincontent, if any */
-	font-weight: bold;
 
-}
 #content footer article {
 	/* Each foter article */
 	width: 96%;
