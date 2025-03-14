@@ -84,7 +84,7 @@
            <p>Wir suchen jedes Jahr weltoffene, neugierige Menschen, die Europas Zukunft aktiv mitgestalten wollen. Sie haben die Fähigkeiten, den Willen und die Vision, einen Beitrag zu einer besseren Welt zu leisten. Das Stipendium ermöglicht jungen Menschen, das Europäische Forum Alpbach in voller Länge zu besuchen. Dort sammeln sie Inspiration und Ideen, erweitern ihren Horizont und schließen Freundschaften fürs Leben mit Menschen aus aller Welt. </p>
 
         <p>In einem Stipendium sind zum einen die Teilnahmegebühren für das Europäische Forum Alpbach enthalten. Das heißt, du kannst sowohl an der Seminarwoche, als auch an den im Anschluss stattfindenden Veranstaltungen und Konferenzen teilnehmen. Zum anderen ist Unterbringung in Alpbach während des gesamten Zeitraums des EFA inkludiert.</p>
-<h3> &rarr; <a href="https://www.alpbach.org/blog/scholarship-programme" id="bewerbungslink" title="EFA Bewerbungsprotal" target="_blank">Bewirb dich über das Portal auf alpbach.org zwischen 3. - 25. März 2025!</a></h3>
+<h3> &rarr; <a href="https://www.alpbach.org/blog/scholarship-programme" title="EFA Bewerbungsprotal" target="_blank">Bewirb dich über das Portal auf alpbach.org zwischen 3. - 25. März 2025!</a></h3>
            <div class="w3-hide">  <button onclick="myFunction('Bewerbungsprozess')" style="background-color: #f2f2f2; border: none">	<h3> &rarr; Bewerbungsprozess 2024 (abgeschlossen)</h3>   </button></div>
 
 		<div id="Bewerbungsprozess" class="w3-hide"> <h3><!-- Tagline -->Voraussetzungen</h3>
@@ -849,41 +849,6 @@ function showSlides(n, no) {
             cookieBanner.style.display = 'none';// Banner ausblenden
         });
     }
-document.addEventListener('DOMContentLoaded', function() {
-    const bewerbungslink = document.getElementById('bewerbungslink');
-
-    if (bewerbungslink) { // Stelle sicher, dass der Link existiert
-        bewerbungslink.addEventListener('click', function(event) {
-          // Verhindere das Standardverhalten des Links (optional, aber gut für die Kontrolle)
-          event.preventDefault();
-
-            // Überprüfe, ob die Zustimmung zum Tracking gegeben wurde.
-            const consent = getCookie("cookieConsent"); // Nutze die existierende getCookie-Funktion
-
-            if (consent === "accepted") {
-                gtag('event', 'conversion', {
-                    'send_to': 'AW-11239047966/GaOpCPPBvJ0ZEJ6Gme8p', // ERSETZEN!
-                    'value': 1.0,
-                    'currency': 'EUR',
-                    'transaction_id': ''
-                });
-            }
-
-            // Leite den Benutzer zur Zielseite weiter.
-            window.location.href = bewerbungslink.href;
-        });
-    }
-});
-</script>
-    <!-- ausklappbare Buttons -->
-<script>	function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
 </script>
 </body>
 </html>
