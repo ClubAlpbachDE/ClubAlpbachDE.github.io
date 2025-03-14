@@ -431,7 +431,8 @@ footer {
 .mySlides5:not(:first-child),
 .mySlides6:not(:first-child),
 .mySlides7:not(:first-child),
-.mySlides8:not(:first-child) {
+.mySlides8:not(:first-child),
+.mySlides9:not(:first-child) {
   display: none;
 }
 
@@ -442,7 +443,8 @@ footer {
 .mySlides5,
 .mySlides6,
 .mySlides7,
-.mySlides8 {
+.mySlides8,
+.mySlides9 {
 margin-bottom: 21px;
 }
 
@@ -519,6 +521,7 @@ margin-bottom: 21px;
 .mySlides5 img,
 .mySlides6 img,
 .mySlides7 img,
+.mySlides8 img,
 .mySlides8 img {
   max-width: 100%;
   height: auto;
