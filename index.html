@@ -15,73 +15,32 @@
     <meta name="description"
           content="Der Club Alpbach Deutschland e.V. vergibt als Teil des Forum Alpbach Network Stipendien für das European Forum Alpbach und veranstaltet Aktivitäten in Deutschland und online, um den europäischen Austausch zu fördern.">
 
-   <script>
-    const cookieBanner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('accept-btn');
-    const rejectBtn = document.getElementById('reject-btn');
-
-    acceptBtn.addEventListener('click', () => {
-        //  Set a cookie to remember the user's choice
-        document.cookie = "cookieConsent=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/"; // Cookie valid for 1 year
-        cookieBanner.style.display = 'none'; // Hide the banner
-         gtag('consent', 'update', {
-           'analytics_storage': 'granted',
-           'ad_storage': 'granted'
-         });
-    });
-
-    rejectBtn.addEventListener('click', () => {
-        // Set a cookie to remember the user's choice
-        document.cookie = "cookieConsent=rejected; max-age=" + 60 * 60 * 24 * 365 + "; path=/"; // Cookie valid for 1 year
-        cookieBanner.style.display = 'none'; // Hide the banner
-         gtag('consent', 'update', {
-           'analytics_storage': 'denied',
-           'ad_storage': 'denied'
-         });
-    });
-
-    // Check if the user has already made a choice
-    if (document.cookie.indexOf("cookieConsent=") >= 0) {
-        cookieBanner.style.display = 'none'; // Hide the banner if a choice exists
-        // If consent was previously given, you might need to initialize Google Tag here as well
-    }
-</script>
-
-        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11239047966"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
+  // 1. Standardmäßig ALLES ablehnen
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500 // Warten auf Update (Best Practice)
+  });
+
+  gtag('js', new Date());
   gtag('config', 'AW-11239047966');
 </script>
-
-<!-- ausklappbare Buttons -->
-<script>	function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
-<!-- Bilderkarussell -->
-
-
 </head>
 
 <body>
 <div id="mainwrapper">
   <header>
     <!--**************************************************************************
-    Header starts here. It contains Logo and 3 navigation links. 
+    Header starts here. It contains Logo and 3 navigation links.
     ****************************************************************************-->
 
     <div id="logo"> <img src="https://github.com/ClubAlpbachDE/ClubAlpbachDE.github.io/blob/main/CAD_Logo_Wei%C3%9F_Homepage_h70px.png?raw=true" alt="CAD Logo"> </div>
-	  
+
     <nav> <a href="#Stipendien" title="Stipendienprogramm">Stipendien</a>
         <a href="#EFA" title="European Forum Alpbach">EFA</a>
         <a href="#CAD" title="Club Alpbach Deutschland">CAD</a>
@@ -116,7 +75,7 @@
     Main Blog content starts here
     ****************************************************************************-->
       <div id="Stipendien" class="bannerImage platzhalter"><img src="https://github.com/ClubAlpbachDE/ClubAlpbachDE.github.io/blob/main/Stipendium_Foto_Website.png?raw=true" alt="Header Stipendienprogramm 2023 &copy; EFA - Philipp Huber"/></div>
-	 
+
 	   <div> <h1><!-- Blog title -->Das Stipendienprogramm</h1>
       <h3><!-- Tagline -->Stipendienprogramm 2025 - Jetzt bewerben!</h3>
            <p>Wir suchen jedes Jahr weltoffene, neugierige Menschen, die Europas Zukunft aktiv mitgestalten wollen. Sie haben die Fähigkeiten, den Willen und die Vision, einen Beitrag zu einer besseren Welt zu leisten. Das Stipendium ermöglicht jungen Menschen, das Europäische Forum Alpbach in voller Länge zu besuchen. Dort sammeln sie Inspiration und Ideen, erweitern ihren Horizont und schließen Freundschaften fürs Leben mit Menschen aus aller Welt. </p>
@@ -150,13 +109,13 @@
         </div>
 
         </div>
-		 <aside id="authorInfo"> 
- <!-- Zitate --> 
+		 <aside id="authorInfo">
+ <!-- Zitate -->
 		<p style="font-style: italic;"><br>
 &#8220;Was für mich bleibt vom Europäischen Forum Alpbach, ist der Eindruck von Menschen. Ich erinnere mich am besten an ikonische Redner*innen, an Timothy Snyder, Bruno Stagno und Shalini Randeria, an meine Zimmergenoss*innen, an das Team des CAD und an viele andere Gesichter, an Stipendiat*innen, Wissenschaftler*innen, Mitglieder des Orga-Teams des EFA und Leute, die sich Zeit für mich genommen haben, um mit mir an Ideen zu arbeiten oder die Zukunft zu planen.&#8221; </p>
 <p> - Leonis, Stipendiat des CAD am Europäischen Forum Alpbach 2022</p>
 		</aside>
-		 
+
 
 	    <!-- FAQ -->
 		 <div>
@@ -164,43 +123,43 @@
 
 	 <div>  <button onclick="myFunction('Frage2')" style="background-color: #f2f2f2; border: none"> <h3>+ Ich habe mich auch bei einem anderen Club beworben. Kann ich mich trotzdem auch für ein Stipendium des Club Alpbach Deutschland bewerben?
 </h3></button></div>
-    
+
     <div>
         <div id="Frage2" class="w3-hide">
           <p>Ja! Mehrfachbewerbungen sind möglich und führen zu keinerlei Nachteilen bei der Bewertung deiner Bewerbung. Wir bitten dich nur im Bewerbungsformular anzugeben, bei welchen anderen Club(s) du dich beworben hast.</p>
         </div>
   </div>
              <div> <button onclick="myFunction('Frage7')" style="background-color: #f2f2f2; border: none"> <h3>+ Wie wird entschieden, welche Bewerbung erfolgreich ist?</h3></button></div>
-    
+
         <div id="Frage7" class="w3-hide">
           <p>Das Auswahlverfahren beginnt mit einer Prüfung der formalen Kriterien. Bewerbungen, die die formalen Kriterien erfüllen, werden in die nächste Runde weitergeleitet, wo sie anonymisiert und anschließend von mindestens zwei Mitgliedern des EFA-Auswahlkomitees geprüft und bewertet werden. Das Auswahlkomitee besteht aus engagierten Mitgliedern, die in verschiedenen Bereichen der Gesellschaft tätig sind, z. B. in der Wissenschaft, in Think Tanks, in der Wirtschaft usw. Viele von ihnen sind Alumni und/oder ehemalige Teilnehmer des Forums, darunter auch ehemalige Stipendiaten des Club Alpbach Deutschlands. Der Durchschnitt der beiden Jury-Bewertungen bestimmt die Rangfolge aller Kandidaten*innen. Auf der Grundlage dieser Rangliste trifft das EFA die endgültige Auswahl der Kandidaten*innen, wobei es auf eine ausgewogene Mischung von Disziplinen und Hintergründen achtet.</p>
 <p> Die zweite Bewerbungsrunde wird ausschließlich vom Auswahlkomitee des Club Alpbach Deutschlands bewertet.
 </p>
         </div>
-			 
+
              <div> <button onclick="myFunction('Frage7a')" style="background-color: #f2f2f2; border: none"> <h3>+ Wie wird Unbefangenheit sichergestellt?</h3></button></div>
-    
+
         <div id="Frage7a" class="w3-hide">
           <p>Um Unbefangenheit zu ermöglichen, verpflichtet sich jedes Mitglied des CAD-Auswahlkomitees dazu, mögliche Befangenheiten mit Bewerber*innen vor Beginn des Auswahlprozesses zu deklarieren. Liegt eine Befangenheit vor, stimmt das betreffende Mitglied des Auswahlkomitees nicht mit.</p>
         </div>
-			 
+
              <div> <button onclick="myFunction('Frage9')" style="background-color: #f2f2f2; border: none"> <h3>+ Darf man sich nochmal bewerben?</h3></button> </div>
-    
+
         <div id="Frage9" class="w3-hide">
           <p>Gerne kannst du dich trotz einer Absage in einem der vergangenen Jahre noch einmal bei uns für ein Stipendium bewerben. Da die Anzahl der Bewerbungen von Jahr zu Jahr schwankt und der Lebenslauf sich weiterentwickelt, bewerten wir die Bewerbung jedes Jahr aufs Neue.</p>
         </div>
 
              <p>Antworten auf weitere Fragen gibt es im <u><a href="https://www.alpbach.org/faq-scholarship-programme" title="EFA Scholarship Programme FAQ" target="_blank">EFA Scholarship Programme FAQ</a></u></p>
-			 
-<!-- Für die Zukunft....	 
-			 
+
+<!-- Für die Zukunft....
+
 	 <div> <button onclick="myFunction('Frage12')" style="background-color: #f2f2f2; border: none"> <p>+ Muss ich die Bewerbungsunterlagen in deutscher Sprache verfassen?</p></button> </div>
-    
+
         <div id="Frage12" class="w3-hide">
           <p>Du kannst deine Bewerbungsunterlagen auf Deutsch oder Englisch verfassen. Die Bewerbung muss nicht einheitlich in einer Sprache gehalten sein. So kannst du etwa die Kreativarbeit in einer anderen Sprache gestalten, als den Rest deiner Bewerbung.</p>
-        </div> 
+        </div>
 //-->
-		
+
 		</div>
 		<div>
 		      <div id="EFA" class="bannerImage"><img src="https://github.com/ClubAlpbachDE/ClubAlpbachDE.github.io/blob/main/Alpbach_Landschaft%201000x300%20(c)EFA_Elisabeth_Mandl%20.jpg?raw=true" alt="Header Alpbach Landschaftsfoto &copy; EFA_Elisabeth_Mandl"/></div>
@@ -232,7 +191,7 @@ Eine Vielzahl innovativer Veranstaltungsformate prägt diese vier Tage, darunter
 </div>
 <div>
 		        <h1 id="CAD">Club Alpbach Deutschland e. V.</h1>
-     
+
 
 		    <h3><!-- Tagline -->Wir bringen das European Forum Alpbach nach Deutschland</h3>
         <p>Der Club Alpbach Deutschland e.V. ist ein gemeinnütziger, ehrenamtlicher Verein mit dem Ziel jungen Menschen die Teilhabe am European Forum Alpbach zu ermöglichen.
@@ -244,16 +203,16 @@ Eine Vielzahl innovativer Veranstaltungsformate prägt diese vier Tage, darunter
             Dabei ist es uns vor allem ein Anliegen unseren Stipendiat*innen Einblicke hinter die Kulissen Europas zu verschaffen - ob bei einer Sonnenaufgangswanderung mit einer EU-Kommissionärin oder am Mittagstisch mit einem Demokratie-Aktivisten aus Hongkong.
         </p>
         <p>Kontaktiere uns gerne, wenn du Fragen zur Mitgliedschaft im CAD hast (<a href="mailto:info@clubalpbach.de">info@clubalpbach.de</a>).</p>
-      
+
 	</div>
     </section>
-	 
-    <section id="sidebar"> 
+
+    <section id="sidebar">
       <!--************************************************************************
     Sidebar starts here. It contains a searchbox, sample ad image and 6 links
     ****************************************************************************-->
-   
-		
+
+
       <nav>
 	<h3 style="font-style: normal; font-weight: 300;">Social Media</h3>
         <ul>
@@ -271,15 +230,15 @@ Eine Vielzahl innovativer Veranstaltungsformate prägt diese vier Tage, darunter
       <!--************************************************************************
     Footer starts here
     ****************************************************************************-->
-       
+
 		<article>
-		  
+
         <h3 ><img src="https://raw.githubusercontent.com/ClubAlpbachDE/ClubAlpbachDE.github.io/main/Kathie%20Angerer%7E2.webp"  alt="Katharina Angerer" /> <br>Katharina Angerer</h3>
-      
+
       </article>
       <article>
         <h3><img src="https://github.com/ClubAlpbachDE/ClubAlpbachDE.github.io/blob/main/Leo%20150x150.jpg?raw=true"  alt="Leo Jan Zirwes" /> <br>Leo Jan Zirwes</h3>
-        
+
       </article>
            <article>
         <h3><img src="https://raw.githubusercontent.com/ClubAlpbachDE/ClubAlpbachDE.github.io/refs/heads/main/Vorstand%20Fotos/Sophia%20Duttenh%C3%B6fer.webp"  alt="Sophia Duttenhöfer" /> <br>Sophia Duttenhöfer</h3>
@@ -677,9 +636,9 @@ An dieser Stelle möchten wir uns noch einmal recht herzlich bei Felix für den 
              <p> [<time datetime="DD-MM-YYYY">12-04-2023</time>] - Leonis Krude</p>
           <h3>Einladung zur Ringvorlesung: <br>Introduction to Indigenous Philosophy of North America </h3>
 
-          <p>Wie soll man sich der Voraussetzungen eigenen Denkens bewusst werden, ohne vertraute Wissensstrukturen durch andere Blickpunkte herauszufordern? 
-		  In dieser Ringvorlesung wollen wir gemeinsam die engen Maschen westlichen Denkens aufbrechen und in die philosophischen Grundprinzipien der indigenen Bevölkerung Nordamerikas einführen. 
-		  Die Veranstaltung soll Stereotype überwinden, interkulturellen Diskurs fördern, sowie neue philosophische Zugänge zu alten und neuen Fragen eröffnen. 
+          <p>Wie soll man sich der Voraussetzungen eigenen Denkens bewusst werden, ohne vertraute Wissensstrukturen durch andere Blickpunkte herauszufordern?
+		  In dieser Ringvorlesung wollen wir gemeinsam die engen Maschen westlichen Denkens aufbrechen und in die philosophischen Grundprinzipien der indigenen Bevölkerung Nordamerikas einführen.
+		  Die Veranstaltung soll Stereotype überwinden, interkulturellen Diskurs fördern, sowie neue philosophische Zugänge zu alten und neuen Fragen eröffnen.
 		  Wir heißen alle Interessierten mit jedem Hintergrund ganz herzlich willkommen!</p>
           <div>
           <img class="blogimg" src="https://github.com/ClubAlpbachDE/ClubAlpbachDE.github.io/blob/main/Blog%20Fotos/Leonis%20Ringvorlesung.png?raw=true" alt="Einladung zur Ringvorlesung: Introduction to Indigenous Philosophy of North America"></div>
@@ -790,7 +749,7 @@ Central European University und Bruno Stagno, Chief Advocacy Officer bei Human R
 	<center><a href="Impressum.html">Kontakt </a>
 	  <a href="Impressum.html#Impressum"> Impressum </a>
 	<a href="Impressum.html#Datenschutz"> Datenschutz</a></center>
-	</div> 
+	</div>
 </div>
 </div>
 
@@ -825,6 +784,74 @@ function showSlides(n, no) {
 
     // Show the active slide
     slides[slideIndex[no] - 1].style.display = "block";
+}
+</script>
+    <script>
+ // Funktion um Cookie zu lesen (Hilfsfunktion)
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+
+    //Wird ausgeführt, wenn die Seite geladen wird
+     window.onload = function() {
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-btn');
+        const rejectBtn = document.getElementById('reject-btn');
+
+        // 2. Prüfen, ob Cookie gesetzt ist
+        const consent = getCookie("cookieConsent");
+
+        if (consent === "accepted") {
+            // Zustimmung wurde erteilt: Tracking erlauben.
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted'
+            });
+            cookieBanner.style.display = 'none'; // Banner ausblenden
+        } else if (consent === "rejected") {
+          // Zustimmung wurde abgelehnt. Keine Änderung nötig, da default 'denied' ist.
+            cookieBanner.style.display = 'none'; // Banner ausblenden
+        }
+        //Wenn kein Cookie gesetzt ist, wird hier nichts unternommen.
+        // Der Banner bleibt sichtbar durch die CSS-Regel, die nicht verändert wurde.
+
+
+        // 3. Event Listener für Buttons
+        acceptBtn.addEventListener('click', () => {
+            // Cookie setzen (1 Jahr gültig)
+            document.cookie = "cookieConsent=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
+            // Zustimmung an gtag melden
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted'
+            });
+            cookieBanner.style.display = 'none'; // Banner ausblenden
+        });
+
+        rejectBtn.addEventListener('click', () => {
+             // Cookie setzen (1 Jahr gültig)
+            document.cookie = "cookieConsent=rejected; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
+             // Ablehnung an gtag melden (nicht unbedingt nötig, da default, aber explizit ist besser)
+            gtag('consent', 'update', {
+                'analytics_storage': 'denied',
+                'ad_storage': 'denied'
+            });
+            cookieBanner.style.display = 'none';// Banner ausblenden
+        });
+    }
+
+</script>
+    <!-- ausklappbare Buttons -->
+<script>	function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
 </body>
