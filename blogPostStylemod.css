@@ -432,7 +432,9 @@ footer {
 .mySlides6:not(:first-child),
 .mySlides7:not(:first-child),
 .mySlides8:not(:first-child),
-.mySlides9:not(:first-child) {
+.mySlides9:not(:first-child),
+.mySlidesRetro1:not(:first-child), 
+.mySlidesRetro2:not(:first-child) {
   display: none;
 }
 
@@ -444,7 +446,9 @@ footer {
 .mySlides6,
 .mySlides7,
 .mySlides8,
-.mySlides9 {
+.mySlides9,
+.mySlidesRetro1,
+.mySlidesRetro2 {
 margin-bottom: 21px;
 }
 
@@ -522,7 +526,9 @@ margin-bottom: 21px;
 .mySlides6 img,
 .mySlides7 img,
 .mySlides8 img,
-.mySlides9 img {
+.mySlides9 img,
+.mySlidesRetro1 img,
+.mySlidesRetro2 img {
   max-width: 100%;
   height: auto;
   margin: auto;
